@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bodybackground{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  z-index: -1;
+  background-color: #4d5da6;
+
+}
+
+.subjects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  height:100vh;
+  margin:auto;
+
+}
+
+.studentsubject{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: #1f1bb3;
+  cursor: pointer;
+  animation: subjectrotate infinite 5s linear;
+}
+
+.studentsubject:focus,.studentsubject:hover{
+transform: translateY(-20px);
+border: 15px solid white;
+}
+
+
+.subjectname{
+  color: white;
+}
+
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcometext{
+  color:white;
+  margin-top: 20px;
+}
+
+
+
+@keyframes  subjectrotate{
+
+  from{
+    transform: rotate(0deg);
+    transform: translateY(-20px);
+  }
+
+  to{
+    transform: rotate(360deg);
+    transform: translateY(50px);
+  }
+}
